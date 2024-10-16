@@ -97,11 +97,13 @@ header {
     border-color: #4CAF50;
 }
 
-.social-media {
-    display: flex;
-    align-items: center;
+.social-medias {    
     gap: 10px;
     margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .social-icon {
@@ -167,7 +169,7 @@ h2 {
     margin-top: 0;
 }
 
-.contact-section h2 {
+.contact-section-home h2 {
     font-size: var(--font-size-h2);
     padding: 0;
     margin: 0;
@@ -257,7 +259,7 @@ h2 {
     transform: scale(1.05);
 }
 
-.contact-section {
+.contact-section-home {
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -272,7 +274,7 @@ h2 {
     padding: 0;
 }
 
-.contact-section p {
+.contact-section-home p {
     padding: 0;
     margin: 5px 0 0 15px;
 }
@@ -395,7 +397,7 @@ footer {
         width: 50pxpx;
     }
 
-    .contact-section {
+    .contact-section-home {
         flex-direction: column;
         align-items: center;
         text-align: center;

@@ -1,4 +1,3 @@
-import React from 'react';
 import evento1 from '../assets/img/logo.png';
 import evento2 from '../assets/img/logo.png';
 import evento3 from '../assets/img/logo.png';

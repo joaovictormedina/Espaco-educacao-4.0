@@ -1,9 +1,10 @@
 import parceiro1 from '../assets/img/logo.png';
 import parceiro2 from '../assets/img/logo.png';
+import '../style.css';
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="contact-section-home">
       <div className="contact-info">
         <h2>Contatos</h2>
         <p>Email: zippclube@gmail.com</p>
