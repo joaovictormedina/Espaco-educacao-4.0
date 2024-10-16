@@ -30,6 +30,13 @@ header {
     align-items: center;
     margin: 0 0 10%;
     gap: 20px;
+    display: flex; 
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    margin: 20px;
 }
 
 .logo-container {
@@ -37,8 +44,9 @@ header {
 }
 
 .logo {
-    width: 350px;
+    width: 250px;
     max-width: 100%;
+    position: fixed;
 }
 
 .contact-button {
@@ -122,11 +130,8 @@ header {
     width: 85%;
     height: 4px;
     background-color: orange;
-    /* Cor das linhas */
     margin: 2px 0;
-    /* Margem entre as linhas */
     transition: transform 0.3s ease;
-    /* Transição suave ao animar */
 }
 
 
@@ -278,6 +283,11 @@ h2 {
     align-items: center;
 }
 
+.partners img:hover {
+    transform: scale(1.55);
+    transition: transform 0.7s ease;
+}
+
 .partner-list {
     display: flex;
     gap: 20px;
@@ -326,7 +336,6 @@ footer {
 
         .hidden {
             display: none;
-            /* Oculta o elemento */
         }
 
     .burger-menu {
@@ -341,7 +350,8 @@ footer {
     .metodologia {
         font-size: 55px;
         margin-top: 100px;
-        padding: 0px 25px 0px 25px;
+        padding: 0px 25px 50px 25px;
+        
     }    
 
     .courses-section h2 {

@@ -1,0 +1,129 @@
+.contact-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.social-media {
+    color: #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: black;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #45a049;
+    outline: none;
+}
+
+.contact-button-page {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 60%;
+}
+
+.contact-button-page:hover {
+    background-color: #45a049;
+}
+
+.contact-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .contact-section {
+        padding: 15px;
+    }
+
+    .contact-section h2 {
+        font-size: 20px;
+    }
+
+    .contact-section p {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .contact-button-page {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .location-section iframe{
+        width: 90%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .location-section iframe{
+        width: 100%;
+        margin: 5px auto;
+        padding: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 90%;
+    }
+
+    .contact-button-page {
+        width: 90%;
+    }
+}

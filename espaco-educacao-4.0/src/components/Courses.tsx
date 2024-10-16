@@ -20,7 +20,7 @@ const Courses = () => {
             <li>Pintura Artística</li>
             <li>Pintura em tecido</li>
           </ul>
-          <a href="#" className="learn-more-button">Saiba Mais</a>
+          <a href="https://wa.me/5521997328496?text=Olá, gostaria de saber mais sobre os cursos criativos!" className="learn-more-button" target="_blank" rel="noopener noreferrer">Saiba Mais</a>
         </div>
         <div className="course">
           <img src={aprendizadosImg} alt="Curso 2" />
@@ -30,7 +30,7 @@ const Courses = () => {
             <li>Concurso 4.0</li>
             <li>Recreação 4.0</li>
           </ul>
-          <a href="#" className="learn-more-button">Saiba Mais</a>
+         <a href="https://wa.me/5521997328496?text=Olá, gostaria de saber mais sobre os cursos de aprendizados!" className="learn-more-button" target="_blank" rel="noopener noreferrer">Saiba Mais</a>
         </div>
         <div className="course">
           <img src={tecnologiaImg} alt="Curso 3" />
@@ -41,7 +41,7 @@ const Courses = () => {
             <li>Linguagem de Programação Python - Iniciante</li>
             <li>HTML/JavaScript - Avançado</li>
           </ul>
-          <a href="#" className="learn-more-button">Saiba Mais</a>
+          <a href="https://wa.me/5521997328496?text=Olá, gostaria de saber mais sobre os cursos de tecnologia!" className="learn-more-button" target="_blank" rel="noopener noreferrer">Saiba Mais</a>
         </div>
         <div className="course">
           <img src={feriasImg} alt="Curso 4" />
@@ -51,7 +51,7 @@ const Courses = () => {
             <li>10ª Colônia de Férias/2025</li>
             <li>Day Art nas Férias</li>
           </ul>
-          <a href="#" className="learn-more-button">Saiba Mais</a>
+          <a href="https://wa.me/5521997328496?text=Olá, gostaria de saber mais sobre as atividades de Férias para crianças!" className="learn-more-button" target="_blank" rel="noopener noreferrer">Saiba Mais</a>
         </div>
       </div>
     </section>

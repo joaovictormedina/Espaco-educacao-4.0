@@ -4,10 +4,8 @@ import facebookIcon from '../assets/img/facebook.png';
 import instagramIcon from '../assets/img/instagram.png';
 
 const Header = () => {
-  // Estado inicial do menu
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Começa fechado
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Função para alternar o estado do menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -16,37 +14,31 @@ const Header = () => {
     <header>
       <div className="header-container">
         <div className="logo-container">
-          <a href="#">
+          <a href="/">
             <img src={logo} alt="Logo" className="logo" />
           </a>
         </div>
-
-        {/* Botão do menu hamburguer */}
         <div className="burger-menu" onClick={toggleMenu}>
           <div className={`line ${isMenuOpen ? 'open' : ''}`}></div>
           <div className={`line ${isMenuOpen ? 'open' : ''}`}></div>
           <div className={`line ${isMenuOpen ? 'open' : ''}`}></div>
         </div>
-      
-
-      {/* Ações do cabeçalho */}
-      <div className={`header-actions ${isMenuOpen ? '' : 'hidden'}`}>
-        <a href="#contact" className="login-button">LOGIN</a>
-        <a href="#contact" className="contact-button">CONTATO</a>
-        <div className="search-container">
-          <input type="text" placeholder="BUSCAR..." className="search-input" />
+        <div className={`header-actions ${isMenuOpen ? '' : 'hidden'}`}>
+          <a href="/login" className="login-button">LOGIN</a>
+          <a href="/contato" className="contact-button">CONTATO</a>
+          <div className="search-container">
+            <input type="text" placeholder="BUSCAR..." className="search-input" />
+          </div>
+          <div className="social-media">
+            <a href="https://www.facebook.com/espacoeducacao4" target="_blank" rel="noopener noreferrer">
+              <img src={facebookIcon} alt="Facebook" className="social-icon" />
+            </a>
+            <a href="https://www.instagram.com/espacoeducacao4.0/" target="_blank" rel="noopener noreferrer">
+              <img src={instagramIcon} alt="Instagram" className="social-icon" />
+            </a>
+          </div>
         </div>
-        <div className="social-media">
-          <a href="https://www.facebook.com/espacoeducacao4" target="_blank" rel="noopener noreferrer">
-            <img src={facebookIcon} alt="Facebook" className="social-icon" />
-          </a>
-          <a href="https://www.instagram.com/espacoeducacao4.0/" target="_blank" rel="noopener noreferrer">
-            <img src={instagramIcon} alt="Instagram" className="social-icon" />
-          </a>
-        </div>
-        </div>
-        </div>
-
+      </div>
       <div className="metodologia">
         Metodologia Inovadora <br />
         ao Ensinar.
