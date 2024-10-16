@@ -1,4 +1,8 @@
-/* Estilo geral */
+:root {
+    --font-size-h2: 50px;
+    --font-size-h2: 50px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +10,6 @@ body {
     line-height: 1.6;
 }
 
-/* Estilo do cabeçalho */
 header {
     background-image: url('./assets/img/fundo.png');
     background-size: cover;
@@ -15,15 +18,13 @@ header {
     position: relative;
 }
 
-/* Container para o cabeçalho e elementos fixos */
 .header-container {
     display: flex;
-    justify-content: space-between; /* Alinha a logo à esquerda e o grupo de ações à direita */
-    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between;
+    align-items: center;
     padding: 2% 2% 0 2%;
 }
 
-/* Container dos elementos fixos na parte superior do cabeçalho */
 .header-actions {
     display: flex;
     align-items: center;
@@ -31,17 +32,15 @@ header {
     gap: 20px;
 }
 
-/* Logo */
 .logo-container {
     flex-shrink: 0;
 }
 
 .logo {
     width: 350px;
-    max-width: 100%;    
+    max-width: 100%;
 }
 
-/* Botão de contato */
 .contact-button {
     background-color: #4CAF50;
     color: white;
@@ -53,17 +52,29 @@ header {
     transition: background-color 0.3s ease;
 }
 
-/* Efeito hover para o botão de contato */
 .contact-button:hover {
     background-color: #45a049;
 }
 
-/* Container do input de busca */
-.search-container {
-    width: 250px; /* Tamanho fixo do input */
+.login-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-/* Input de busca */
+.login-button:hover {
+    background-color: #45a049;
+}
+
+.search-container {
+    width: 250px;
+}
+
 .search-input {
     width: 100%;
     padding: 8px;
@@ -74,31 +85,52 @@ header {
     transition: border-color 0.3s ease;
 }
 
-/* Efeito focus para o input de busca */
 .search-input:focus {
     border-color: #4CAF50;
 }
 
-/* Container dos ícones sociais */
 .social-media {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 10px;    
+    margin: 10px;
 }
 
-/* Estilo dos ícones sociais */
 .social-icon {
-    width: 30px; /* Tamanho fixo dos ícones sociais */
+    width: 30px;
     transition: transform 0.3s ease;
 }
 
-/* Efeito hover para os ícones sociais */
 .social-icon:hover {
     transform: scale(1.1);
 }
 
-/* Estilo da metodologia */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.623);
+    border: 2px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.line {
+    width: 85%;
+    height: 4px;
+    background-color: orange;
+    /* Cor das linhas */
+    margin: 2px 0;
+    /* Margem entre as linhas */
+    transition: transform 0.3s ease;
+    /* Transição suave ao animar */
+}
+
+
+
 .metodologia {
     font-family: 'GoodDog Plain', sans-serif, cursive;
     font-size: 80px;
@@ -108,36 +140,34 @@ header {
     margin-top: 30%;
     text-align: center;
     text-shadow:
-            -1px -1px 0 black,
-            1px -1px 0 black,
-            -1px 1px 0 black,
-            1px 1px 0 black; /* Borda preta de 2px ao texto */
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
 }
 
-/* Estilo dos títulos das seções */
 h2 {
     font-family: 'GoodDog Plain', sans-serif, cursive;
     color: orange;
     text-align: center;
 }
 
-/* Tamanhos diferentes para cada título */
 .courses-section h2 {
-    font-size: 90px; /* Ajuste o tamanho conforme necessário */
+    font-size: var(--font-size-h2);
     margin-top: 0;
 }
 
 .events-section h2 {
-    font-size: 90px; /* Ajuste o tamanho conforme necessário */
+    font-size: var(--font-size-h2);
     margin-top: 0;
 }
 
 .contact-section h2 {
-    font-size: 90px; /* Ajuste o tamanho conforme necessário */
-    margin-top: 0;
+    font-size: var(--font-size-h2);
+    padding: 0;
+    margin: 0;
 }
 
-/* Estilo dos Cursos */
 .courses-section {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -146,15 +176,17 @@ h2 {
 
 .courses-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    padding: 10px;
+    margin: 0px;
 }
 
 .course {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .course ul {
@@ -189,7 +221,6 @@ h2 {
     background-color: #45a049;
 }
 
-/* Estilo da Lista de Cursos */
 .course-list {
     list-style-type: disc;
     margin: 10px 0;
@@ -197,7 +228,6 @@ h2 {
     text-align: left;
 }
 
-/* Estilo dos Eventos */
 .events-section {
     padding: 40px 20px;
     background-color: #fff;
@@ -222,17 +252,24 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Estilo de Contato e Parceiros */
 .contact-section {
     display: flex;
-    justify-content: space-between; /* Alinha Contato e Parceiros lado a lado */
-    padding: 40px 20px;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0;
     background-color: #5290ee;
     color: white;
 }
 
-.contact-info, .partners {
-    width: 45%; /* Ajusta a largura dos containers */
+.contact-info,
+.partners {
+    width: 45%;
+    padding: 0;
+}
+
+.contact-section p {
+    padding: 0;
+    margin: 5px 0 0 15px;
 }
 
 .partners {
@@ -252,12 +289,11 @@ h2 {
 }
 
 .partner-list img {
-    width: 100px; /* Ajuste conforme necessário */
+    width: 100px;
     height: auto;
     border-radius: 8px;
 }
 
-/* Estilo do rodapé */
 footer {
     background-color: #5290ee;
     color: white;
@@ -266,8 +302,66 @@ footer {
     font-size: 14px;
 }
 
-/* Estilos responsivos */
+@media (max-width: 1024px) {
+
+    body {
+            margin: 0;
+            padding: 0;
+    }
+    
+    .logo {
+            width: 180px;
+            padding: 20px;
+        }
+     .header-actions {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        position:fixed;
+        padding: 0;
+        margin-top: 0;
+        top: 20px;
+        right: 20px;
+    }
+
+        .hidden {
+            display: none;
+            /* Oculta o elemento */
+        }
+
+    .burger-menu {
+        display: flex; 
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        cursor: pointer;
+        margin: 20px;
+    }
+    .metodologia {
+        font-size: 55px;
+        margin-top: 100px;
+        padding: 0px 25px 0px 25px;
+    }    
+
+    .courses-section h2 {
+        font-size: 40px;
+    }
+
+    .course {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .events-section h2 {
+        font-size: 40px;
+    }
+
+}
 @media (max-width: 768px) {
+
     .logo {
         width: 120px;
     }
@@ -277,13 +371,18 @@ footer {
         margin-top: 100px;
     }
 
-    .header-container {
-        flex-direction: column; /* Empilha os itens em telas menores */
-        align-items: flex-start; /* Alinha à esquerda */
+    .search-container {
+        margin-top: 10px;
+        width: 150px;
     }
 
-    .search-container {
-        margin-top: 10px; /* Adiciona espaço acima do input de busca em telas menores */
+    .header-actions{
+        margin-top: 10%;
+        margin-right: 10%;
+    }
+
+    .header-actions a {
+        width: 50pxpx;
     }
 
     .contact-section {
@@ -292,7 +391,8 @@ footer {
         text-align: center;
     }
 
-    .contact-info, .partners {
+    .contact-info,
+    .partners {
         width: 100%;
         margin-bottom: 20px;
     }
@@ -305,6 +405,6 @@ footer {
     }
 
     .partner-list img {
-        width: 80px; /* Ajuste conforme necessário */
+        width: 80px;
     }
 }

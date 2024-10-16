@@ -1,17 +1,10 @@
-import React from 'react';
 import parceiro1 from '../assets/img/logo.png';
 import parceiro2 from '../assets/img/logo.png';
 
 const Contact = () => {
   return (
     <section className="contact-section">
-      <div className="contact-info">
-        <h2>Contatos</h2>
-        <p>Email: contato@espacoeducacao40.com</p>
-        <p>Telefone: (21) 98765-4321</p>
-        <p>Endereço: Rua Exemplo, 123 - Bairro - Cidade/Estado</p>
-      </div>
-      <div className="partners">
+       <div className="partners">
         <h2>Parceiros</h2>
         <div className="partner-list">
           <a href="https://link-para-parceiro1.com" target="_blank" rel="noopener noreferrer">
@@ -22,6 +15,12 @@ const Contact = () => {
           </a>
         </div>
       </div>
+      <div className="contact-info">
+        <h2>Contatos</h2>
+        <p>Email: zippclube@gmail.com</p>
+        <p>Telefone: (21) 99732-8496</p>
+        <p>Partage Shopping - Av. Pres. Kennedy, 425 - <br /> Centro, São Gonçalo - RJ, 24445-000, Brasil</p>
+      </div>     
     </section>
   );
 };

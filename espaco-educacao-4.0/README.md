@@ -1,50 +1,81 @@
-# React + TypeScript + Vite
+Aqui está o arquivo `README.md` atualizado com o link correto do seu repositório:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Plataforma Educacional Responsiva
 
-Currently, two official plugins are available:
+## Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto é uma plataforma educacional responsiva desenvolvida com **React** e **Vite**, anteriormente construída em HTML, CSS e JavaScript. A nova versão foca em acessibilidade e usabilidade, melhorando a experiência do usuário e facilitando o acesso a conteúdos educacionais. A plataforma agora se beneficia da interatividade do React e da eficiência de build do Vite, tornando o aprendizado mais acessível e intuitivo.
 
-## Expanding the ESLint configuration
+## Objetivo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+O objetivo deste projeto é proporcionar uma interface amigável e inclusiva que permita aos usuários navegar facilmente pelos conteúdos educacionais, promovendo um ambiente de aprendizado eficaz e acessível.
 
-- Configure the top-level `parserOptions` property like this:
+## Funcionalidades
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Acessibilidade Aprimorada:** Recursos para garantir que a plataforma seja utilizável por todos, independentemente de suas habilidades.
+- **Usabilidade Intuitiva:** Navegação simples e clara, permitindo que os usuários encontrem o que precisam com facilidade.
+- **Design Responsivo:** A plataforma se adapta a diferentes tamanhos de tela, garantindo uma boa experiência em dispositivos móveis e desktops.
+- **Interatividade:** Elementos dinâmicos que melhoram a experiência do usuário através do React.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Tecnologias Utilizadas
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **React:** Biblioteca para construção de interfaces de usuário.
+- **Vite:** Ferramenta de build rápida e eficiente.
+- **CSS:** Estilização e design responsivo.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Como Usar
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/joaovictormedina/Espaco-educacao-4.0.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd Espaco-educacao-4.0
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Abra o navegador e acesse `http://localhost:5173` para visualizar a plataforma.
+
+## Contribuições
+
+Estou aberto a sugestões e melhorias. Para contribuir:
+
+1. Faça um fork do repositório.
+
+2. Crie uma branch para suas alterações:
+
+   ```bash
+   git checkout -b minha-alteracao
+   ```
+
+3. Faça commit das suas alterações e envie para o repositório:
+
+   ```bash
+   git commit -am 'Descrição das mudanças'
+   git push origin minha-alteracao
+   ```
+
+4. Abra um Pull Request para revisão.
+
+## Contato
+
+Se você está interessado em discutir oportunidades de colaboração ou contratações, entre em contato:
+
+- **E-mail:** [joaovictor.zipp@gmail.com](mailto:joaovictor.zipp@gmail.com)
+- **LinkedIn:** [João Victor Medina Pinto](https://www.linkedin.com/in/joaovictormedina)
+- **GitHub:** [joaovictormedina](https://github.com/joaovictormedina)
