@@ -1,3 +1,4 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import criativosImg from '../assets/img/criativos.png';
 import aprendizadosImg from '../assets/img/aprendizados.png';
 import tecnologiaImg from '../assets/img/tecnologia.png';
@@ -30,7 +31,7 @@ const Courses = () => {
             <li>Concurso 4.0</li>
             <li>Recreação 4.0</li>
           </ul>
-         <a href="https://wa.me/5521997328496?text=Olá, gostaria de saber mais sobre os cursos de aprendizados!" className="learn-more-button" target="_blank" rel="noopener noreferrer">Saiba Mais</a>
+          <a href="https://wa.me/5521997328496?text=Olá, gostaria de saber mais sobre os cursos de aprendizados!" className="learn-more-button" target="_blank" rel="noopener noreferrer">Saiba Mais</a>
         </div>
         <div className="course">
           <img src={tecnologiaImg} alt="Curso 3" />

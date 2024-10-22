@@ -31,7 +31,6 @@ header {
     margin: 0 0 10%;
     gap: 20px;
     display: flex; 
-    position: fixed;
     top: 20px;
     right: 20px;
     z-index: 1000;
@@ -46,7 +45,6 @@ header {
 .logo {
     width: 250px;
     max-width: 100%;
-    position: fixed;
 }
 
 .contact-button {
@@ -76,6 +74,21 @@ header {
 }
 
 .login-button:hover {
+    background-color: #45a049;
+}
+
+.home-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
     background-color: #45a049;
 }
 
@@ -113,6 +126,20 @@ header {
 
 .social-icon:hover {
     transform: scale(1.1);
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    margin: 5px 0;
+}
+
+.social-icons img {
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
 }
 
 .burger-menu {
