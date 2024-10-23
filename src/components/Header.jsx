@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom'; // Importando useLocation
+import { useLocation } from 'react-router-dom';
 import logo from '../assets/img/logo.png';
 import facebookIcon from '../assets/img/facebook.png';
 import instagramIcon from '../assets/img/instagram.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation(); // Obtendo a localização atual
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

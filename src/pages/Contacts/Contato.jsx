@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section className="contact-section">
       <div className="contact-area">
-        <h2>Contato</h2>
+        <h2>Contatos</h2>
         <div className="social-media">
           <h3>Siga-nos nas redes sociais:</h3>
           <div className="social-icons">
@@ -18,9 +18,8 @@ const Contact = () => {
               title="Visite nosso Facebook"
             >
               <img src={facebookIcon} alt="Facebook" className="social-icon" />
-              <p>espacoeducacao4</p>
+              <text>espacoeducacao4</text>
             </a>
-            <br />
             <a
               href="https://www.instagram.com/espacoeducacao4.0/"
               target="_blank"
@@ -32,7 +31,7 @@ const Contact = () => {
                 alt="Instagram"
                 className="social-icon"
               />
-              <p>espacoeducacao4.0</p>
+              <text>espacoeducacao4.0</text>
             </a>
             <br />
           </div>
